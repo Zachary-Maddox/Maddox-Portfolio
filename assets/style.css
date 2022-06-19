@@ -5,9 +5,6 @@
     color: whitesmoke;
 }
 /* Header Style and Navbar */
-header {
-    font-family: cursive;
-}
 img {
     width: 15%;
 }
@@ -22,18 +19,32 @@ ul {
     align-items: center;
     height: 100%;
     background-color: rgb(96, 0, 164);
-  padding: 8px;
+    padding: 8px;
 }
-li{
-  background: none;
+li {
+    background: none;
 }
 /* Main Sections Style */
-.AboutMe{
-display: block;
-text-decoration: underline;
+#AboutMe {
+    display: block;
+    text-decoration: underline;
 }
 
-p{
-text-align: start ;
+p {
+    text-align: start;
 }
 
+.flex-container {
+    display:block;
+    flex-direction: row;
+}
+.horiseon{
+    display: flex;
+    width: 50%;
+    justify-content:center;
+    
+}
+
+.comingsoon{
+    width: 50%;
+}

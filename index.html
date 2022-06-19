@@ -11,51 +11,61 @@
 
     <body>
         <header>
-            Zachary.S.Maddox
-            <nav>
-                <img
-                    src="./assets/images/Profile.jpg"
-                    alt="Picture of Myself"
-                />
+                
+                <nav>
                 <ul>
-                    <li><a href="About Me"></a> About Me</li>
-                    <li><a href="Previous Work"></a> Previous Work</li>
+                    <li><a href="AboutMe"></a> About Me</li>
+                    <li><a href="PreviousWork"></a> Previous Work</li>
                     <li><a href="Contact"></a> Contact</li>
                 </ul>
             </nav>
         </header>
         <main>
             <section>
-                <div class="AboutMe">
+                <div id="AboutMe">
                     <h1>About Me</h1>
                 </div>
+                <img
+                    src="./assets/images/Profile.jpg"
+                    alt="Picture of Myself"
+                />
                 <p>
-                    My name is Zachary Maddox,I'm a twenty five year old
+                    My name is Zachary Maddox, I'm a twenty five year old
                     disabled veteran who is transitioning careers from hands on
-                    laboreous work to more crictal thinking and team oriented
-                    styled jobs. I'm currently attending UCF's online bootcamp
+                    laborious work to critical thinking and team oriented
+                    style jobs. I'm currently attending UCF's online bootcamp
                     for Web Devolpement and Coding where I plan to take these
-                    skills and knowledge in hopes of becoming a Freelancing Web
+                    skills and knowledge in hopes of becoming a Freelance Web
                     Devolper.
                 </p>
-                <br />
+                <!-- add spacing and remove br tag -->
+                <br>
             </section>
             <section>
-                <h1>Previous Work</h1>
+                <div id="PreviousWork">
+                    <h1>Previous Work</h1>
+                </div>
                 <div class="flex-container">
                     <div>
-                        <img
+                        <img class="horiseon"
                             src="./assets/images/Horiseon-Marketing-and-Management.png"
                             alt="Screen shot of Built website I Refactored"
                         />
                     </div>
                     <div>
-                        <img
+                        <img class="comingsoon"
                             src="./assets/images/image.png"
                             alt="Coming Soon"
                         />
                     </div>
-                    <div><img src="./assets/images/Github-Screenshot.png" alt="Screen shot of my Github"></div>
+                    <div>
+                        <img
+                            src="./assets/images/Github-Screenshot.png"
+                            alt="Screen shot of my Github"
+                        /><a
+                            href="https://github.com/Zachary-Maddox?tab=repositories"
+                        ></a>
+                    </div>
                 </div>
             </section>
         </main>
