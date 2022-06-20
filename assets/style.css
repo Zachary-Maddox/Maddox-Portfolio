@@ -3,13 +3,15 @@
     font-size: large;
     background-color: rgb(63, 63, 63);
     color: whitesmoke;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 /* Header Style and Navbar */
 .profile {
     width: 15%;
 }
 
-.navbar{
+.navbar {
     display: flex;
     gap: 1rem;
     justify-content: flex-end;
@@ -20,41 +22,103 @@
     list-style: none;
 }
 li {
-    background: none;
+    background:rgb(96, 0, 164);
 }
 /* Main Sections Style */
-#AboutMe {
-    display: block;
-}
-
 p {
     text-align: start;
+    margin-bottom: 2rem;
 }
 
-.box img{
+.container {
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.box img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.row{
+.row {
+    flex-wrap: wrap;
     display: flex;
     box-sizing: border-box;
 }
-.column{
-    flex: 50%;
+.column1 {
+    flex: auto;
+    padding: 5px;
+}
+.column2 {
+    flex: 0 50%;
     padding: 5px;
 }
 
-
-.horiseon{
-    display: flex;
-    width: 50%;
-    justify-content:center;
-    
+[class*="column"] {
+    float: left;
+    padding: 10px;
+    border: 5px solid rgb(96, 0, 164);
+    margin: 2px;
 }
 
-.info{ display: flex;
+.horiseon {
+    display: flex;
+    width: 50%;
     justify-content: center;
-    gap: 1rem;
-    list-style: none;
+}
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(96, 0, 164);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    cursor: text;
+}
+input[type="submit"] {
+    background-color: rgb(96, 0, 164);
+    color: whitesmoke;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+h2, h1 {
+    margin:1rem 0;
+}
+
+/* for Desktops */
+@media only screen and (max-width: 992px) {
+    .column1,
+    .column2 {
+        width: 100%;
+    }
+    .p {
+        font-size: large;
+    }
+}
+
+/* for tablets */
+@media only screen and (max-width: 768px) {
+    .column1 .column2 {
+        width: 100%;
+    }
+    .p {
+        font-size: medium;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    /* mobile Phones */
+    [class*="column"] {
+        width: 100%;
+    }
+    .p {
+        font-size: medium;
+    }
 }
