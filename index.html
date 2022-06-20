@@ -11,62 +11,85 @@
 
     <body>
         <header>
-                
-                <nav>
-                <ul>
-                    <li><a href="AboutMe"></a> About Me</li>
-                    <li><a href="PreviousWork"></a> Previous Work</li>
-                    <li><a href="Contact"></a> Contact</li>
+            <nav>
+                <ul class="navbar">
+                    <li><a href="#AboutMe" ></a> About Me</li>
+                    <li><a href="#PreviousWork"></a> Previous Work</li>
+                    <li><a href="#Contact"></a> Contact</li>
                 </ul>
             </nav>
         </header>
         <main>
+            <div>
             <section>
-                <div id="AboutMe">
-                    <h1>About Me</h1>
-                </div>
-                <img
+                    <h1 id="Aboutme">About Me</h1>
+                <img class="profile"
                     src="./assets/images/Profile.jpg"
                     alt="Picture of Myself"
                 />
                 <p>
                     My name is Zachary Maddox, I'm a twenty five year old
                     disabled veteran who is transitioning careers from hands on
-                    laborious work to critical thinking and team oriented
-                    style jobs. I'm currently attending UCF's online bootcamp
-                    for Web Devolpement and Coding where I plan to take these
-                    skills and knowledge in hopes of becoming a Freelance Web
-                    Devolper.
+                    laborious work to critical thinking and team oriented style
+                    jobs. I'm currently attending UCF's online bootcamp for Web
+                    Devolpement and Coding where I plan to take these skills and
+                    knowledge in hopes of becoming a Freelance Web Devolper.
                 </p>
                 <!-- add spacing and remove br tag -->
-                <br>
+                <br />
             </section>
+        </div>
             <section>
                 <div id="PreviousWork">
-                    <h1>Previous Work</h1>
+                    <h2>Previous Work</h2>
                 </div>
-                <div class="flex-container">
-                    <div>
-                        <img class="horiseon"
+
+                <div class="box box1">
+                    <a
+                        href="https://github.com/Zachary-Maddox/Horiseon-Refactor"
+                        target="_blank"
+                    >
+                        <img
+                            id="horiseon"
                             src="./assets/images/Horiseon-Marketing-and-Management.png"
                             alt="Screen shot of Built website I Refactored"
                         />
+                    </a>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <a
+                            href="https://github.com/Zachary-Maddox/Mini-Project01"
+                            target="_blank"
+                        >
+                            <img
+                                src="./assets/images/image.png"
+                                alt="Coming Soon"
+                                style="width: 100%"
+                            />
+                        </a>
                     </div>
-                    <div>
-                        <img class="comingsoon"
-                            src="./assets/images/image.png"
-                            alt="Coming Soon"
-                        />
-                    </div>
-                    <div>
-                        <img
-                            src="./assets/images/Github-Screenshot.png"
-                            alt="Screen shot of my Github"
-                        /><a
+                    <div class="column">
+                        <a
                             href="https://github.com/Zachary-Maddox?tab=repositories"
-                        ></a>
+                            target="_blank"
+                        >
+                            <img
+                                src="./assets/images/Github-Screenshot.png"
+                                alt="Screen shot of my Github"
+                                style="width: 100%; height: 100%"
+                        /></a>
                     </div>
                 </div>
+            </section>
+            <section>
+                <div id="Contact">
+                <h2>Contact Me</h2>
+                <ul class="info">
+                    <li>Phone Number: 404-805-3635</li>
+                    <li>Email: z19s96p@aol.com</li>
+                </ul>
+            </div>
             </section>
         </main>
     </body>
