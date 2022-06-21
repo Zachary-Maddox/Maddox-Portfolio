@@ -9,6 +9,12 @@
 /* Header Style and Navbar */
 .profile {
     width: 15%;
+    border-radius: 50%;
+}
+
+h2,
+h1 {
+    margin: 1rem 0;
 }
 
 .navbar {
@@ -22,9 +28,14 @@
     list-style: none;
 }
 li {
-    background:rgb(96, 0, 164);
+    background: rgb(96, 0, 164);
 }
 /* Main Sections Style */
+/* Image not working when attached to div but does when set to body */
+.background {
+    background-image: url("https://images.unsplash.com/photo-1573614999645-e5f0f16ec15d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8OHx8fGVufDB8fHx8&w=1000&q=80");
+}
+
 p {
     text-align: start;
     margin-bottom: 2rem;
@@ -40,31 +51,30 @@ p {
     height: 100%;
     object-fit: cover;
 }
-.row {
-    flex-wrap: wrap;
-    display: flex;
-    box-sizing: border-box;
-}
-.column1 {
-    flex: auto;
-    padding: 5px;
-}
-.column2 {
-    flex: 0 50%;
-    padding: 5px;
-}
-
-[class*="column"] {
-    float: left;
-    padding: 10px;
-    border: 5px solid rgb(96, 0, 164);
-    margin: 2px;
-}
 
 .horiseon {
     display: flex;
     width: 50%;
     justify-content: center;
+}
+
+.row {
+    /* flex-flow: row wrap; */
+    /* display: flex; */
+}
+/* look into adding psuedo hover to image */
+
+.column1 {
+    padding: 5px;
+}
+.column2 {
+    padding: 5px;
+}
+
+[class*="column"] {
+    padding: 10px;
+    border: 5px solid rgb(96, 0, 164);
+    margin: 2px;
 }
 
 input[type="text"],
@@ -88,15 +98,12 @@ input[type="submit"] {
     border-radius: 4px;
     cursor: pointer;
 }
-h2, h1 {
-    margin:1rem 0;
-}
 
 /* for Desktops */
-@media only screen and (max-width: 992px) {
+@media only screen and (min-width: 992px) {
     .column1,
     .column2 {
-        width: 100%;
+        justify-content: center;
     }
     .p {
         font-size: large;
@@ -104,21 +111,23 @@ h2, h1 {
 }
 
 /* for tablets */
-@media only screen and (max-width: 768px) {
-    .column1 .column2 {
-        width: 100%;
+@media only screen and (min-width: 768px) {
+    .column1,
+    .column2 {
+        display: flex;
+        width: 48%;
     }
     .p {
         font-size: medium;
     }
 }
 
-@media only screen and (max-width: 700px) {
-    /* mobile Phones */
-    [class*="column"] {
-        width: 100%;
-    }
+/* mobile Phones */
+@media only screen and (min-width: 640px) {
     .p {
         font-size: medium;
+    }
+    .column1 {
+        width: 100%;
     }
 }
