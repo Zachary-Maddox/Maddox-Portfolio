@@ -5,7 +5,11 @@
     color: whitesmoke;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThuROxocad_sY476bHESYrAa6aTzr2YTTJrg&usqp=CAU);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
 /* Header Style and Navbar */
 .profile {
     width: 15%;
@@ -15,6 +19,7 @@
 h2,
 h1 {
     margin: 1rem 0;
+    color: whitesmoke;
 }
 
 .navbar {
@@ -31,10 +36,6 @@ li {
     background: rgb(96, 0, 164);
 }
 /* Main Sections Style */
-/* Image not working when attached to div but does when set to body */
-.background {
-    background-image: url("https://images.unsplash.com/photo-1573614999645-e5f0f16ec15d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8OHx8fGVufDB8fHx8&w=1000&q=80");
-}
 
 p {
     text-align: start;
@@ -57,12 +58,6 @@ p {
     width: 50%;
     justify-content: center;
 }
-
-.row {
-    /* flex-flow: row wrap; */
-    /* display: flex; */
-}
-/* look into adding psuedo hover to image */
 
 .column1 {
     padding: 5px;
@@ -91,7 +86,6 @@ textarea {
     cursor: text;
 }
 input[type="submit"] {
-    background-color: rgb(96, 0, 164);
     color: whitesmoke;
     padding: 12px 20px;
     border: none;
@@ -116,6 +110,10 @@ input[type="submit"] {
     .column2 {
         display: flex;
         width: 48%;
+        flex: 50%;
+    }
+    .row {
+        display: flex;
     }
     .p {
         font-size: medium;
