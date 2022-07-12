@@ -58,11 +58,16 @@ p {
     width: 50%;
     justify-content: center;
 }
-
+.row {
+    flex-wrap: wrap;
+}
 .column1 {
     padding: 5px;
 }
 .column2 {
+    padding: 5px;
+}
+.column3 {
     padding: 5px;
 }
 
