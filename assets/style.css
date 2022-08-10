@@ -70,6 +70,9 @@ p {
 .column3 {
     padding: 5px;
 }
+.column4 {
+    padding: 5px;
+}
 
 [class*="column"] {
     padding: 10px;
